@@ -1,0 +1,11 @@
+<div *ngIf="Observable === true">
+    Este div sí es Observable
+</div>
+<input type="text" [(ngModel)]="name">
+<button (click)="addItem()">Agregar</button>
+<button (click)="removeItem()">Eliminar</button>
+<div>{{ message }}
+    <div *ngFor="let name of names; index as i">
+        <li>{{ name }}</li>
+    </div>
+</div>

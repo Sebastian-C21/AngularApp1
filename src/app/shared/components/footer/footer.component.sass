@@ -1,0 +1,22 @@
+@mixin footerSet()
+    display: flex
+    justify-content: center
+    align-items: center
+
+.wrapper
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: space-between
+    background-color:#76477f
+    color: #7bd151
+    padding: 0px 40px
+
+
+.right, .middle, .left
+    @include footerSet()
+    padding: 5px
+
+.middle
+    flex-direction: column
+    

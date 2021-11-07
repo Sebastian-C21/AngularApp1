@@ -1,0 +1,11 @@
+<div class="product-wrapper">
+    <div class="name">
+        {{ product.name }}
+    </div>
+    <img [src]="product.image" alt="">
+    <div>description
+        {{ product.text }}
+    </div>
+    <div>Price:
+        {{ product.price | exponential | currency}}
+</div>

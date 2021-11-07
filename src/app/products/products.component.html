@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="text">
+            Welcome to products section! If you need any details abput
+            out products pleaseclick on the image!
+        </div>
+        <div class="product">
+            <div class="product-grid">
+                <app-product
+                (productClicked)="clickedProduct($event)"
+                [product]="product"
+                *ngFor="let product of products; index as i"
+                ></app-product>
+            </div>
+        </div>
+    </div>
+</div>

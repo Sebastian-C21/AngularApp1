@@ -1,0 +1,15 @@
+<h3 appHighlight>{{ product.name | uppercase }}</h3>
+<div class="img-container">
+    <a [routerLink]="['/products', product.id]">
+        <img [src]="product.image" alt="" width="100px">
+    </a>
+</div>
+<div class="text-container">
+    <p>Description: {{ product.text }}</p>
+    <button mat-flat-button (click)="addToCart()">Select Card</button>
+    <a [routerLink]="['/products', product.id]"></a>
+</div>
+<div>
+    Price: {{ product.price | exponential | currency }}. <span *ngIf="added">added!</span>
+</div>
+
