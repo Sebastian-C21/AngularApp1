@@ -1,11 +1,17 @@
-<div class="product-wrapper">
-    <div class="name">
-        {{ product.name }}
+<div class="wrapper">
+    <div class="container">
+        <div class="display">
+            <div class="name">
+                {{ product.name }}
+            </div>
+            <img [src]="product.image" alt="">
+            <div class="description">description
+                {{ product.text }}
+            </div>
+            <div class="price">Price:
+                {{ product.price | exponential | currency}}
+            </div>
+        </div>
+        <button mat-flat-button (click)="addToCart()">Add to Cart</button>
     </div>
-    <img [src]="product.image" alt="">
-    <div>description
-        {{ product.text }}
-    </div>
-    <div>Price:
-        {{ product.price | exponential | currency}}
 </div>

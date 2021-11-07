@@ -6,9 +6,6 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatButtonModule } from '@angular/material/button';
-
-
 
 import { DemoComponent } from './demo/demo.component';
 
@@ -21,22 +18,15 @@ import { CoreModule } from './core/core.module';
 @NgModule({
   declarations: [
     AppComponent,
-
-
-
     DemoComponent,
-
     PageNotFoundComponent,
-
     LayoutComponent,
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatButtonModule,
     SharedModule,
     CoreModule
   ],

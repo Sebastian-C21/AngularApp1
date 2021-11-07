@@ -22,6 +22,9 @@ export class ProductDetailComponent implements OnInit {
       this.product = this.productsService.getProduct(id);
     });
   }
+  addToCart(){
+    
+  }
 
 }
 /*Toca subscribirse al cambio que exista entre los

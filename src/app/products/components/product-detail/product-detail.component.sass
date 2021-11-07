@@ -1,2 +1,58 @@
+@mixin disp()
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    
+    
 img
-    width: 300px
+    width: 200px
+    border-radius: 3px
+.wrapper
+    background-color: #1D7164
+    height: 100%
+
+.container
+    @include disp()
+    background-color: #289679
+    height: 100%
+
+.display
+    background-color: #2cac79
+    @include disp()
+    padding: 5px 10px
+    margin: 5px 0px
+    border-radius: 3px
+
+.description,.name, .price
+    padding: 5px
+    color: #0d342e
+
+button
+    background-color: #76477f
+    height: 22px
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+@media (min-width: 376px)
+    img
+        width: 200px
+    .container
+        max-width: 650px
+        margin: auto auto
+
+@media (min-width: 576px)
+    img
+        width: 400px
+    .container
+        max-width: 650px
+        margin: auto auto
+
+@media (min-width: 876px)
+    img
+        width: 500px
+    .container
+        max-width: 950px
+        margin: auto auto
