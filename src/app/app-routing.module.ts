@@ -29,8 +29,16 @@ const routes: Routes = [
         path: 'contact',
         loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
       },
+      {
+        path: 'cart',
+        loadChildren: () => import('./cart/cart.module').then(m => m.CartModule)
+      }
     ]
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
+  },  
   {
     path: 'demo',
     component: DemoComponent
