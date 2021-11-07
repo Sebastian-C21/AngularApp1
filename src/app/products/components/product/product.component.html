@@ -6,10 +6,10 @@
 </div>
 <div class="text-container">
     <p>Description: {{ product.text }}</p>
-    <button mat-flat-button (click)="addToCart()">Select Card</button>
+    <button mat-flat-button (click)="addToCart()">Add to Cart</button>
     <a [routerLink]="['/products', product.id]"></a>
 </div>
-<div>
+<div class="price">
     Price: {{ product.price | exponential | currency }}. <span *ngIf="added">added!</span>
 </div>
 

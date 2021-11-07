@@ -9,31 +9,31 @@ export class ProductsService {
   products: Product[] = [
     {
       id: '1',
-      name: 'sword',
-      text: 'perro',
-      price: 1,
-      image: 'assets/images/Profile.jpg'
+      name: 'Blue Whale Bed',
+      text: 'Confortable bed for your cat!',
+      price: 2,
+      image: 'assets/images/pro1.jpg'
     },
     {
       id: '2',
-      name: 'sword',
-      text: 'gato',
+      name: 'Green Pillow Bed',
+      text: 'Confortable bed for your cat!',
       price: 2,
-      image: 'assets/images/Profile.jpg'
+      image: 'assets/images/pro2.jfif'
     },
     {
       id: '3',
-      name: 'sword',
-      text: 'perro',
+      name: 'Cat Treehouse',
+      text: 'Confortable house for your cat!',
       price: 3,
-      image: 'assets/images/Profile.jpg'
+      image: 'assets/images/pro3.png'
     },
     {
       id: '4',
-      name: 'sword',
-      text: 'gato',
+      name: 'Fancy Cat House',
+      text: 'Confortable house for your cat!',
       price: 4,
-      image: 'assets/images/Profile.jpg'
+      image: 'assets/images/pro4.jpg'
     }
   ];
   constructor() { }

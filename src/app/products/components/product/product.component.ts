@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter} from '@angular/core';
-import { Product } from '../product.model';
+import { Product } from 'src/app/product.model';
 
 @Component({
   selector: 'app-product',
@@ -14,6 +14,7 @@ caso se usa para enviar información al componente padre, esta
 información debe ser recibida por el componente padre con propiedades
 de emiter que al parecer es el parámetro (información) enviada*/
   added: boolean = false;
+  
   @Input() product: Product;
   @Output() productClicked: EventEmitter<any> = new EventEmitter;
 

@@ -5,8 +5,6 @@ import { DemoComponent } from './demo/demo.component';
 
 import { LayoutComponent } from './layout/layout.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { ProductsComponent } from './products/products.component';
 
 
 const routes: Routes = [
@@ -25,11 +23,7 @@ const routes: Routes = [
       },
       {
         path: 'products',
-        component: ProductsComponent
-      },
-      {
-        path: 'products/:id',
-        component: ProductDetailComponent
+        loadChildren: () => import('./products/products.module').then(m => m.ProductsModule)
       },
       {
         path: 'contact',
