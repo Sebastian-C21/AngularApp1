@@ -4,7 +4,9 @@ import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 import { DemoComponent } from './demo/demo.component';
 
 import { LayoutComponent } from './layout/layout.component';
+import { LoginGuard } from './login/components/login/login.guard';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 
 
 const routes: Routes = [
@@ -27,6 +29,7 @@ const routes: Routes = [
       },
       {
         path: 'contact',
+        canActivate: [LoginGuard],
         loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
       },
       {

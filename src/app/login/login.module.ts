@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -20,6 +21,7 @@ import { MatInputModule } from '@angular/material/input';
 @NgModule({
     declarations: [
         LoginComponent,
+        
     ],
     imports: [
         CommonModule,
@@ -28,7 +30,8 @@ import { MatInputModule } from '@angular/material/input';
         MatCheckboxModule,
         MatButtonModule,
         ReactiveFormsModule,
-        MatInputModule
+        MatInputModule,
+        SharedModule
     ]
 })
 
