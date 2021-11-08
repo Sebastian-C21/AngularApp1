@@ -1,3 +1,31 @@
 <div class="wrapper">
-    Contact is working!
+    <div class="container">
+        <div class="container2">
+            <div class="info">
+                To contact us please fill the information!
+            </div>
+            <form [formGroup]="infoForm">
+                <div>
+                    <mat-form-field class="input-length">
+                        <mat-label>Email</mat-label>
+                        <input tabindex="1" matInput placeholder="Email" required formControlName="infoEmail" id="email" type="email">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="input-length">
+                        <mat-label>Name</mat-label>
+                        <a class="label-forgot" href="/forgot-password"></a>
+                        <input matInput  required placeholder="" formControlName="infoName" id="password" type="text">
+                    </mat-form-field>
+                </div>
+                <div class="input-text">
+                    <mat-form-field class="input-text" appearance="fill">
+                        <mat-label>Leave a comment</mat-label>
+                        <textarea matInput placeholder="" fomrControlName="infoText"></textarea>
+                    </mat-form-field>
+                </div>
+            </form>
+            <button mat-flat-button>Enviar</button>
+        </div>
+    </div>
 </div>

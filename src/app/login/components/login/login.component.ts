@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
     if((this.user.email === email) && (this.user.password === password)){
       console.log('El usuario está autentificado');
       this.usersService.identified(true);
-      this.router.navigate(['login']);
+      this.router.navigate(['contact']);
     }else{
       this.usersService.identified(false);
     }

@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter} from '@angular/core';
+import { CartService } from 'src/app/core/services/cart/cart.service';
 import { Product } from 'src/app/product.model';
 
 @Component({
@@ -14,12 +15,16 @@ caso se usa para enviar información al componente padre, esta
 información debe ser recibida por el componente padre con propiedades
 de emiter que al parecer es el parámetro (información) enviada*/
   added: boolean = false;
-  
+  constructor(
+    private cartService: CartService
+  ){}
   @Input() product: Product;
   @Output() productClicked: EventEmitter<any> = new EventEmitter;
 
   addToCart(){
     this.productClicked.emit(this.product.id);
+    console.log(this.product);
+    this.cartService.addItem(this.product);
     this.added = true;
   }
 }

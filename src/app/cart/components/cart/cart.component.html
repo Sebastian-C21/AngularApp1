@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="text">
+            Welcome to products section! If you need any details abput
+            out products pleaseclick on the image!
+        </div>
+        <div class="product">
+            <div class="product-grid">
+                <app-item
+                [cart]="item"
+                *ngFor="let item of cart; index as i"
+                ></app-item>
+            </div>
+        </div>
+    </div>
+</div>

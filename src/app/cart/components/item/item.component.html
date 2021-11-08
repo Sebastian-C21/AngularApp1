@@ -1,0 +1,14 @@
+<h3 appHighlight>{{ cart.name | uppercase }}</h3>
+<div class="img-container">
+    <a [routerLink]="['/products', cart.id]">
+        <img [src]="cart.image" alt="" width="100px">
+    </a>
+</div>
+<div class="text-container">
+    <p>Description: {{ cart.text }}</p>
+    <button mat-flat-button>Add to Cart</button>
+    <a [routerLink]="['/products', cart.id]"></a>
+</div>
+<div class="price">
+    Price: {{ cart.price | exponential | currency }}.
+</div>

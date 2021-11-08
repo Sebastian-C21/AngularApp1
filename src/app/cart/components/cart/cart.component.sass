@@ -1,0 +1,26 @@
+.wrapper
+    background-color: #1D7164
+
+.text
+    padding: 5px 0px
+    text-align: center
+    color: #7bd151
+
+.product-grid
+    display: grid
+    grid-template-columns: repeat(1, 1fr)
+    width: 100%
+
+@media (min-width: 576px)
+    .product-grid
+        grid-template-columns: repeat(2, 1fr)
+    .container
+            max-width: 650px
+            margin: auto auto
+
+@media (min-width: 876px)
+    .product-grid
+        grid-template-columns: repeat(3, 1fr)
+    .container
+        max-width: 950px
+        margin: auto auto
